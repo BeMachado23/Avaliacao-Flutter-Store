@@ -66,4 +66,4 @@ A `HomeScreen` atua como o **hub central do estado**, segurando a lista completa
 
 1.  **Persistência de Dados:** O estado de favoritos é **local e temporário**. Ele é mantido apenas na memória (`_allProducts` na `HomeScreen`) enquanto o aplicativo está rodando. Se o aplicativo for fechado ou reiniciado, a lista de favoritos voltará ao seu estado inicial (vazia).
 2.  **Imagens:** O projeto utiliza imagens salvas na pasta `assets/images/` do projeto, conforme configurado no `pubspec.yaml`, seguindo boas práticas de assets locais.
-3.  **Gerenciamento de Estado:** O projeto atende estritamente ao requisito de usar **`setState`** para o gerenciamento de estado dos favoritos. Não foram utilizadas bibliotecas de gerenciamento de estado mais complexas (como Provider, Riverpod ou BLoC) para simplificar a aplicação e focar nos fundamentos.
+3.  **Gerenciamento de Estado:** O projeto atende estritamente ao requisito de usar **`setState`** para o gerenciamento de estado dos favoritos.
