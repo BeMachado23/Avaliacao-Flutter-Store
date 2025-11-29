@@ -8,14 +8,16 @@ Siga os passos abaixo para rodar o projeto em seu ambiente de desenvolvimento:
 
 ### Pré-requisitos
 
-* **Flutter SDK** (Versão 3.x ou superior)
+* **Flutter SDK 3.10 ou superior** ([como instalar](https://docs.flutter.dev/get-started/install))
 * **Um Emulador** (Android ou iOS) ou um dispositivo físico conectado.
+
+> 💡 Verifique sua versão com `flutter --version`
 
 ### Instalação
 
 1.  **Clone o Repositório:**
     ```bash
-    git clone [INSERIR A URL DO SEU REPOSITÓRIO AQUI]
+    git clone https://github.com/BeMachado23/Avaliacao-Flutter-Store.git
     cd flutter_avaliacao
     ```
 
@@ -67,3 +69,8 @@ A `HomeScreen` atua como o **hub central do estado**, segurando a lista completa
 1.  **Persistência de Dados:** O estado de favoritos é **local e temporário**. Ele é mantido apenas na memória (`_allProducts` na `HomeScreen`) enquanto o aplicativo está rodando. Se o aplicativo for fechado ou reiniciado, a lista de favoritos voltará ao seu estado inicial (vazia).
 2.  **Imagens:** O projeto utiliza imagens salvas na pasta `assets/images/` do projeto, conforme configurado no `pubspec.yaml`, seguindo boas práticas de assets locais.
 3.  **Gerenciamento de Estado:** O projeto atende estritamente ao requisito de usar **`setState`** para o gerenciamento de estado dos favoritos.
+
+## Desenvolvido por
+
+Bernardo Machado, Tony Peres Pereira, Arthur Cechinel Nunes, Luiz Felipe de Souza Basso - UniSENAI
+

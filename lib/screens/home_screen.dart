@@ -54,17 +54,15 @@ class _HomeScreenState extends State<HomeScreen> {
           ],
         ),
       ),
-      // 1:Produtos
       ProductListScreen(
         products: _allProducts,
         onToggleFavorite: _toggleFavorite,
       ),
-      // 2:Favoritos
       FavoritesScreen(
         favoriteProducts: favoriteProducts,
         onToggleFavorite: _toggleFavorite,
       ),
-      // 3:Sobre
+      
       const AboutScreen(),
     ];
     
@@ -72,7 +70,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
     return Scaffold(
       appBar: AppBar(title: Text(screenTitles[_selectedScreenIndex])),
-      drawer: AppDrawer(onSelectScreen: _selectScreen),
+      drawer: AppDrawer(onSelectScreen: _selectScreen, selectedIndex: _selectedScreenIndex),
       body: screens[_selectedScreenIndex],
     );
   }

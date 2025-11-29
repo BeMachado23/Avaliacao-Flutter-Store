@@ -2,13 +2,24 @@ import 'package:flutter/material.dart';
 
 class AppDrawer extends StatelessWidget {
   final Function(int) onSelectScreen;
+  final int selectedIndex;
 
-  const AppDrawer({Key? key, required this.onSelectScreen}) : super(key: key);
+  const AppDrawer({Key? key, required this.onSelectScreen, required this.selectedIndex}) : super(key: key);
 
   Widget _buildListTile(String title, IconData icon, int screenIndex, BuildContext context) {
+    final isSelected = screenIndex == selectedIndex;
     return ListTile(
-      leading: Icon(icon, size: 26),
-      title: Text(title, style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+      leading: Icon(icon, size: 26, color: isSelected ? Colors.indigo : null),
+      title: Text(
+        title,
+        style: TextStyle(
+          fontSize: 18,
+          fontWeight: FontWeight.bold,
+          color: isSelected ? Colors.indigo : null,
+        ),
+      ),
+      selected: isSelected,
+      selectedTileColor: Colors.indigo.withOpacity(0.1),
       onTap: () => onSelectScreen(screenIndex),
     );
   }

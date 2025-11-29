@@ -25,7 +25,7 @@ class AboutScreen extends StatelessWidget {
             style: TextStyle(fontSize: 16, height: 1.4),
           ),
           SizedBox(height: 24),
-          Text('Desenvolvido por: Bernardo', style: TextStyle(fontSize: 16, fontStyle: FontStyle.italic)),
+          Text('Desenvolvido por: Bernardo Machado, Tony Peres Pereira, Arthur Cechinel Nunes, Luiz Felipe de Souza Basso', style: TextStyle(fontSize: 16, fontStyle: FontStyle.italic)),
         ],
       ),
     );

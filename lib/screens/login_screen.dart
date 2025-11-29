@@ -14,7 +14,6 @@ class _LoginScreenState extends State<LoginScreen> {
 
   void _login() {
     if (_formKey.currentState!.validate()) {
-      // Sucesso: Navega para a Home
       Navigator.pushReplacementNamed(context, '/home');
     }
   }
